@@ -10,54 +10,72 @@
       rel="stylesheet">
     
     <script type="module" crossorigin src="/team-project-2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-project-2/assets/index-664a2a62.css">
+    <link rel="stylesheet" href="/team-project-2/assets/index-2b761adb.css">
   </head>
   <body>
     <header>
     <div class="container header-container">
-        <picture>
+        <picture class="picture-jefferson">
         <source srcset="/team-project-2/assets/photo-jefferson-725dc0db.png 1x" media="(min-width: 375px)" />
         <img src="/team-project-2/assets/photo-jefferson-725dc0db.png" alt="">
+            <p class="name-logo">jefferson*</p>
         </picture>
-
-        <p class="name-logo">jefferson*</p>
 
         <p class="name-list-menu">Menu</p>
 
-        <ul class="navigation-menu">
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
+            <div class="box-link-project">
+        <a href=#footer class="link-for-project">Order the project</a>
+    </div>
 
-        <div class="box-link-project">
-            <a href=#footer class="link-for-project">Order the project</a>
-        </div>
+        <button class="btn-open-burger" type="button">
+            <svg class="icon-burger-svg" width="28" height="28">
+            </svg>
+        </button>
 
     </div>
 </header>
+
+<div class="backdrop">
+    <button class="mobile-close-btn" type="button" id="menu-modal-close">
+        <svg class="mobile-close-icon" height="28" width="28">
+            <use href=""></use>
+        </svg>
+    </button>
+
+    <nav>
+     <ul class="navigation-menu">
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>       
+    </nav>
+
+</div>
+
     <section class="hero">
-    <div class="container hero-container">
-        <h1 class="hero-main-title">Hello.
+    <div class="container container-hero">
+        <div class="box-for-title">
+            <h1 class="hero-main-title">Hello.
         I'm Fullstack developer
         Lloyd Jefferson.</h1>
+        </div>
+        
 
         <ul class="hero-social-list">
-            <li><a class="item-social-list" href="https://www.instagram.com/">
+            <li><a class="item-social-list" href="https://www.instagram.com/" target="_blank">
                 IG
             </a></li>
-            <li><a class="item-social-list" href="https://www.facebook.com/">
+            <li><a class="item-social-list" href="https://www.facebook.com/" target="_blank">
                 FB
             </a></li>
-            <li><a class="item-social-list" href="https://www.youtube.com/">
+            <li><a class="item-social-list" href="https://www.youtube.com/" target="_blank">
                 YT
             </a></li>
-            <li><a class="item-social-list" href="https://github.com/leguter/team-project-2">
+            <li><a class="item-social-list" href="https://github.com/leguter/team-project-2" target="_blank">
                 GH
             </a></li>
-
-            <li><a class="address-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+            <li><a class="item-social-list address-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
         </ul>
     </div>
 </section>
