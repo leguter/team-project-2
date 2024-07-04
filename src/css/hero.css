@@ -1,0 +1,32 @@
+.hero-main-title {
+    font: 500 50px / 1 "Inter Tight", sans-serif;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.hero-social-list {
+    font: 500 14px "Inter Tight", sans-serif;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.item-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    width: 37px;
+    height: 37px;
+}
+
+.address-link {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    width: 178px;
+    height: 37px;
+}
