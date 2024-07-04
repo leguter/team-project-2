@@ -17,7 +17,7 @@
     <path d="M26.6667 16H5.33342" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M13.3333 24L5.33325 16L13.3333 8" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon 2">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-2">
     <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="hourglass-02">

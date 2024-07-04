@@ -1,6 +1,10 @@
+.header-container {
+    width: 375px;
+}
+
 .name-logo {
     color: #FAFAFA;
-    width: 84px;
+    min-width: 84px;
     height: 19px;
     margin-left: 8px;
 }
@@ -25,13 +29,6 @@
 
 .box-link-project {
     display: none;
-    /* border-radius: 60px;
-    width: 163px;
-    height: 55px;
-    background: #ed3b44;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .backdrop {
@@ -59,4 +56,34 @@
 
 .picture-jefferson {
     display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        min-width: 768px;
+        }
+    .btn-open-burger {
+        display: none;
+    }
+    .name-list-menu {
+        display: block;
+        cursor: pointer;
+        margin-top: 13px;
+    }
+    .box-link-project {
+        display: block;
+        border-radius: 60px;
+        width: 163px;
+        height: 55px;
+        background: #ed3b44;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-container {
+            min-width: 1440px;
+        }
 }
