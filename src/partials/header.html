@@ -1,25 +1,40 @@
 <header>
     <div class="container header-container">
-        <picture>
+        <picture class="picture-jefferson">
         <source srcset="./img/img-header/photo-jefferson.png   1x
             " media="(min-width: 375px)" />
         <img src="./img/img-header/photo-jefferson.png" alt="">
+            <p class="name-logo">jefferson*</p>
         </picture>
-
-        <p class="name-logo">jefferson*</p>
 
         <p class="name-list-menu">Menu</p>
 
-        <ul class="navigation-menu">
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
+            <div class="box-link-project">
+        <a href=#footer class="link-for-project">Order the project</a>
+    </div>
 
-        <div class="box-link-project">
-            <a href=#footer class="link-for-project">Order the project</a>
-        </div>
+        <button class="btn-open-burger" type="button">
+            <svg class="icon-burger-svg" width="28" height="28">
+            </svg>
+        </button>
 
     </div>
 </header>
+
+<div class="backdrop">
+    <button class="mobile-close-btn" type="button" id="menu-modal-close">
+        <svg class="mobile-close-icon" height="28" width="28">
+            <use href=""></use>
+        </svg>
+    </button>
+
+    <nav>
+     <ul class="navigation-menu">
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>       
+    </nav>
+
+</div>
