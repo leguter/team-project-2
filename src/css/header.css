@@ -1,1 +1,29 @@
+.name-logo {
+    color: #FAFAFA;
+    width: 84px;
+    height: 19px;
+}
 
+.name-list-menu, .navigation-menu {
+    font: 500 16px "Inter Tight", sans-serif;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+}
+
+.link-for-project {
+    font: 500 16px "Inter Tight", sans-serif;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.box-link-project {
+    border-radius: 60px;
+    width: 163px;
+    height: 55px;
+    background: #ed3b44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
