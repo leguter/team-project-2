@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pridi", sans-serif;
+}
+
+.cover-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee-inner {
+    display: flex;
+    animation: marqueeScroll 20s linear infinite;
+}
+
+.marquee-line {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.announced img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@keyframes marqueeScroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
