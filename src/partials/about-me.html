@@ -1,0 +1,72 @@
+  <section class="section">
+    <div class="section-box">
+      <div class="section_text">
+      <h2 class="section-title">I work with people all over the world to create impressive and <span class="section_title-functional">functional</span> <span class="section_title-websites">websites</span> that reflect each client's unique personality.</h2>
+    </div>
+    <div class="section_foto">
+      <picture class="foto">
+        <source
+          srcset="
+          ../img/img-about/tab-image@1x.png 1x,
+          ../img/img-about/tab-image@2x.png 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+          ../img/img-about/tab-image@1x.png 1x,
+          ../img/img-about/tab-image@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+          ../img/img-about/mob-image@1x.png 1x,
+          ../img/img-about/mob-image@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="../img/img-about/mob-image@1x.png"
+          alt="foto"
+          width="704"
+          height="700"
+        />
+      </picture>
+    </div>
+    </div>
+    <div class="section_accordion">
+      <div class="accordion-container">
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_slider"></div>
+  </section>
+  <script>
+    new Accordion('.accordion-container');
+  </script>
