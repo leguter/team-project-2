@@ -27,7 +27,7 @@
 // }
 
 
-import { bodyScrollLock } from 'body-scroll-lock';
+// import { bodyScrollLock } from 'body-scroll-lock';
 
 
 (() => {
@@ -47,7 +47,7 @@ const closeMenuBtn = document.querySelector('#menu-modal-close');
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
         : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body.ontouchmove);
+    // bodyScrollLock[scrollLockMethod](document.body.ontouchmove);
   };
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
@@ -60,6 +60,6 @@ closeMenuBtn4.addEventListener('click', toggleMenu);
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
