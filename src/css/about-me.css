@@ -9,9 +9,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  max-width: 1440px;
+  max-width: 1376px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 64px;
 }
 
 .section_text {
@@ -44,10 +45,11 @@
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
-  .section_text {
+  .section_text, .section_foto {
     min-width: 343px;
     height: 500px;
   }
@@ -56,34 +58,118 @@
     font-size: 24px;
   }
 
-  .section_foto {
-    min-width: 343px;
-    height: 500px;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .section_text {
+  .section_text, .section_foto {
     width: 704px;
     height: 700px;
   }
   .section-title {
     line-height: 1.1;
   }
-  .section_foto {
-    width: 704px;
-    height: 700px;
-  }
+
   .section-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+  }
+  .accordion-container {
+    width: 704px;
   }
 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1376px) {
+  .section_text, .section_foto {
+    width: 680px;
+    height: 700px;
+  }
+  .accordion-container {
+    width: 1376px;
+  }
+}
 
+.accordion-container {
+  max-width: 1376px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ac {
+  margin-top: 8px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  /* // Header class */
+  .ac-header {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* // Trigger class */
+  .ac-trigger {
+    font: bold 16px 'Arial', sans-serif;
+    color: #111111;
+    text-align: left;
+    width: 100%;
+    padding: 8px 32px 8px 8px;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+
+    &::after {
+      content: '+';
+      text-align: center;
+      width: 15px;
+      transform: translate(0, -50%);
+      position: absolute;
+      right: 10px;
+      top: 50%;
+    }
+
+    &:focus {
+      color: #8a8a8a;
+    }
+  }
+
+  /* // Panel class */
+  .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease;
+
+    .ac-text {
+      font: 15px/24px 'Arial', sans-serif;
+      color: #111111;
+      padding: 8px;
+      margin: 0;
+    }
+  }
+
+  /* // Hide content when Javascript is enabled */
+  &.js-enabled {
+    .ac-panel {
+      visibility: hidden;
+    }
+  }
+
+  /* // Active class */
+  &.is-active {
+    .ac-panel {
+      visibility: visible;
+    }
+
+    & > .ac-header .ac-trigger {
+      &::after {
+        content: '\2013';
+      }
+    }
+  }
 }
