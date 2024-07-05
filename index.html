@@ -12,7 +12,7 @@
     <script type="module" crossorigin src="/team-project-2/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-project-2/assets/vendor-3104a0c6.js">
     <link rel="stylesheet" href="/team-project-2/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/team-project-2/assets/index-32bc6cff.css">
+    <link rel="stylesheet" href="/team-project-2/assets/index-e7a3efb3.css">
   </head>
   <body>
     <header>
@@ -25,13 +25,13 @@
 
         <p class="name-list-menu">Menu</p>
 
-            <div class="box-link-project">
+        <div class="box-link-project">
         <a href=#footer class="link-for-project">Order the project</a>
-    </div>
+        </div>
 
         <button class="btn-open-burger" type="button">
             <svg class="icon-burger-svg" width="28" height="28">
-                <use href="../img/sprite/sprite.svg#"></use>
+                <use href="../img/sprite/sprite.svg#burger"></use>
             </svg>
         </button>
 
@@ -39,21 +39,27 @@
 </header>
 
 <div class="backdrop">
+    
     <div class="modal">
-        <button class="mobile-close-btn" type="button" id="menu-modal-close">
-        <svg class="mobile-close-icon" height="28" width="28">
-            <use href=""></use>
-        </svg>
-    </button>
 
-    <nav>
+      <div>
+            <button class="mobile-close-btn" type="button" id="menu-modal-close">
+        <svg class="mobile-close-icon" height="28" width="28">
+            <use href="/team-project-2/assets/sprite-fba27dd7.svg#x"></use></svg>
+        </button>
+    </div>
+
+    <nav class="nav-modal">
      <ul class="navigation-menu">
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li class="item-navigation-menu"><a href="#aboutme">About me</a></li>
+        <li class="item-navigation-menu"><a href="#benefits">Benefits</a></li>
+        <li class="item-navigation-menu"><a href="#projects">Projects</a></li>
+        <li class="item-navigation-menu"><a href="#faq">FAQ</a></li>
     </ul>       
     </nav> 
+        <div class="box-link-project-modal">
+             <a href=#footer class="link-for-project">Order the project</a>
+        </div>
     </div>
 
 
