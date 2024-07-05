@@ -1,19 +1,10 @@
-import Accordion from 'accordion-js';
-
-// const menu = document.querySelector('.name-list-menu');
-// const button = document.querySelector('.mobile-close-btn');
-
-// menu.addEventListener('click', () => {
-    
-// });
-
 const menu = document.querySelector('.name-list-menu');
 const mobileMenu2 = document.querySelector('.backdrop2');
 
 menu.addEventListener('click', openModal);
 
 function openModal() {
-  mobileMenu2.classList.add('is-open2');
+  mobileMenu2.classList.toggle('is-open2');
 }
 
 
