@@ -1,30 +1,21 @@
-// import Accordion from 'accordion-js';
+import Accordion from 'accordion-js';
 
-// const container = document.querySelector('.name-list-menu');
-// const accordion1 = new Accordion(container, {
-//     showMultiple: true,
-//     onOpen: (currEl) => console.log('Open!', currEl)
+// const menu = document.querySelector('.name-list-menu');
+// const button = document.querySelector('.mobile-close-btn');
+
+// menu.addEventListener('click', () => {
+    
 // });
- 
-// const buttons = document.querySelectorAll('.mobile-close-btn');
-//     buttons.forEach((button, idx) => {
-//         button.addEventListener('click', () => accordion1.close(idx));
-//     });
 
-// const markup = ulTemplate();
-// container.innerHTML = markup;
+const menu = document.querySelector('.name-list-menu');
+const mobileMenu2 = document.querySelector('.backdrop2');
 
+menu.addEventListener('click', openModal);
 
-// function ulTemplate(ul) {
-//     return ul.map(liTemplate).join('');
-// }
+function openModal() {
+  mobileMenu2.classList.add('is-open2');
+}
 
-// function liTemplate(li) {
-//     return `<li class="item-navigation-menu"><a href="#aboutme">About me</a></li>
-//         <li class="item-navigation-menu"><a href="#benefits">Benefits</a></li>
-//         <li class="item-navigation-menu"><a href="#projects">Projects</a></li>
-//         <li class="item-navigation-menu"><a href="#faq">FAQ</a></li>`;
-// }
 
 
 // import { bodyScrollLock } from 'body-scroll-lock';
