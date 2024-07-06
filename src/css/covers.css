@@ -4,21 +4,15 @@
     width: 100%;
     overflow: hidden;
     background-color: inherit;
-    color: white;
     padding-bottom: 64px;
     background-size: cover;
-        background-image:
-            url("./img/img-cover/cover-bg1x.png");
-        background-repeat: no-repeat;
-        background-position: center;
-
+    background-image:
+        url("../img/img-cover/cover-bg1x.png");
+    background-repeat: no-repeat;
+    background-position: center;   
 }
-@media screen and (min-resolution: 192dpi) and (min-width: 375px) {
+   
 
-    .cover-section {
-        background-image: url("./img/img-cover/cover-bg@2x.png");
-    }
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -33,13 +27,13 @@
 }
 
 
-/* .cover-container { 
+.cover-container { 
     padding-top: 169px;
     padding-bottom: 32px;
     min-width: 375px;
     padding-left: 30px;
     padding-right: 16px;
-} */
+}
 
 .marquee {
     position: relative;
@@ -49,31 +43,23 @@
     left: -20px;
     bottom: -25px;
     display:flex;
-    
+    min-width: 768px;
     flex-wrap: wrap; 
-    row-gap: 80px;
-            
-
+    row-gap: 80px;         
 }
 
 .marquee-inner {
     display: flex;
     animation: marqueeScroll 20s linear infinite;
-     flex-shrink: 0;
-     gap: 40px;
-            
+    gap: 40px;          
 }
 
-.marquee-line {
-    flex-shrink: 0;
-    
-}
 
 .announced img {
     width: 100%;
     height: auto;
-    display: block;
-    border-radius: 10px;
+    display: flex;
+    
 }
 
 @keyframes marqueeScroll {
@@ -84,4 +70,40 @@
     to {
         transform: translateX(-100%);
     }
+}
+@media only screen and (min-width: 768px) {
+      
+    
+ .cover-section {
+    padding-bottom: 96px;
+    }
+
+ .cover-container {
+    min-width: 768px;
+  }
+
+  .marquee {
+    right: 0;
+    left: -20px;
+    bottom: -25px;
+    min-width: 768px;      
+    row-gap: 80px;
+    }
+   .marquee-inner {
+     
+       gap: 70px;
+   }
+
+   
+}
+@media only screen and (min-width: 1440px) { 
+ 
+ .cover-section {
+    padding-bottom: 164px;
+ }
+
+ .cover-container {
+     min-width: 1440px;
+ }
+
 }
