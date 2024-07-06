@@ -1,0 +1,113 @@
+.reviews-title {
+font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 24px;
+    text-align: left;
+    
+
+}
+
+.feedback-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+
+.reviews-list {
+border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    width: 332px;
+    height: 302px;
+    text-align: left;
+}
+
+.reviews-list-title {
+font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.reviews-list-text {
+font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: left;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .reviews-title {
+        font-size: 48px;
+        line-height: .91667;
+        margin-bottom: 40px;
+    }
+
+    .feedback-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    justify-content: flex-start;
+
+    }
+
+    .reviews-list {
+        flex-direction: column;
+        width: 344px;
+        gap: 8px;
+
+    }
+
+    .victoria {
+        display: flex;
+    }
+
+
+    .reviews-list-title {
+        font-size: 18px;
+        line-height: 20px;
+        line-height: 1.1;
+    }
+
+    .reviews-list-text {
+        font-size: 16px;
+        line-height: 20px;
+        line-height: 1.25
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .feedback-list {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .reviews-list {
+        max-width: 370px;
+    }
+
+    .anastasia {
+        display: flex;
+    }
+}
