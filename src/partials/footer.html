@@ -1,19 +1,21 @@
 <footer>
     <div class="container">
-        <picture>
-            <source
-                srcset="./img/img-footer/work-together-mobile.png 1x, ./img/img-footer/work-together-mobile@2x.png 2x">
-            <img src="./img/img-footer/work-together-mobile.png" alt="">
-        </picture>
-        <h2>Let's <span>work</span> together</h2>
-        <form>
+        <div class="title-container">
+            <picture class="footer-img">
+                <source
+                    srcset="./img/img-footer/work-together-mobile.png 1x, ./img/img-footer/work-together-mobile@2x.png 2x">
+                <img src="./img/img-footer/work-together-mobile.png" alt="">
+            </picture>
+            <h2 class="footer-title">Let's <span class="footer-accent">work</span> together</h2>
+        </div>
+        <form class="footer-form">
             <label for="work-together-input-email"></label>
-            <input type="email" id="work-together-input-email" placeholder="clients@gmail.com"
+            <input type="email" id="work-together-input-email" placeholder="clients@gmail.com" class="footer-input"
                 name="client-email"  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
-                <label for="work-together-input-comments"></label>
-                <input type="text" id="work-together-input-comments" placeholder="comments"
-                    name="client-comments" required>
-                    <button type="submit">Send</button>
+            <label for="work-together-input-comments"></label>
+            <input type="text" id="work-together-input-comments" placeholder="comments" class="footer-input footer-commets"
+                name="client-comments" required>
+            <button type="submit" class="footer-btn-send">Send</button>
         </form>
         <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
         <a href="tel:+3801111111111">+380 11 1111 11 11</a>
