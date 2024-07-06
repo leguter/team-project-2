@@ -9,13 +9,13 @@
 
         <p class="name-list-menu">Menu</p>
 
-            <div class="box-link-project">
+        <div class="box-link-project">
         <a href=#footer class="link-for-project">Order the project</a>
-    </div>
+        </div>
 
         <button class="btn-open-burger" type="button">
             <svg class="icon-burger-svg" width="28" height="28">
-                <use href="../img/sprite/sprite.svg#"></use>
+                <use href="./img/sprite/sprite.svg#burger"></use>
             </svg>
         </button>
 
@@ -23,22 +23,28 @@
 </header>
 
 <div class="backdrop">
+    
     <div class="modal">
-        <button class="mobile-close-btn" type="button" id="menu-modal-close">
-        <svg class="mobile-close-icon" height="28" width="28">
-            <use href=""></use>
-        </svg>
-    </button>
 
-    <nav>
-     <ul class="navigation-menu">
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#faq">FAQ</a></li>
-    </ul>       
-    </nav> 
+      <div>
+            <button class="mobile-close-btn" type="button" id="menu-modal-close">
+        <svg class="mobile-close-icon" height="28" width="28">
+            <use href="./img/sprite/sprite.svg#x"></use></svg>
+        </button>
     </div>
 
-
+    <nav class="nav-modal">
+     <ul class="navigation-menu">
+        <li class="item-navigation-menu" id="js-close-menu-1"><a href="#aboutme">About me</a></li>
+        <li class="item-navigation-menu" id="js-close-menu-2"><a href="#benefits">Benefits</a></li>
+        <li class="item-navigation-menu" id="js-close-menu-3"><a href="#projects">Projects</a></li>
+        <li class="item-navigation-menu" id="js-close-menu-4"><a href="#faq">FAQ</a></li>
+    </ul>       
+    </nav> 
+        <div class="box-link-project-modal">
+             <a href=#footer class="link-for-project">Order the project</a>
+        </div>
+    </div>
 </div>
+<script src="./js/header-modal.js" type="module" defer></script>
+
