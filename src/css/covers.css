@@ -1,35 +1,72 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Pridi", sans-serif;
-}
 
 .cover-section {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: #333;
+    background-color: inherit;
     color: white;
+    padding-bottom: 64px;
+    background-size: cover;
+        background-image:
+            url("./img/img-cover/cover-bg1x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 375px) {
+
+    .cover-section {
+        background-image: url("./img/img-cover/cover-bg@2x.png");
+    }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.container {
-    padding: 20px;
-    text-align: center;
-}
+
+/* .cover-container { 
+    padding-top: 169px;
+    padding-bottom: 32px;
+    min-width: 375px;
+    padding-left: 30px;
+    padding-right: 16px;
+} */
 
 .marquee {
     position: relative;
     overflow: hidden;
+    transform: rotate(20deg);
+    right: 0;
+    left: -20px;
+    bottom: -25px;
+    display:flex;
+    
+    flex-wrap: wrap; 
+    row-gap: 80px;
+            
+
 }
 
 .marquee-inner {
     display: flex;
     animation: marqueeScroll 20s linear infinite;
+     flex-shrink: 0;
+     gap: 40px;
+            
 }
 
 .marquee-line {
     flex-shrink: 0;
-    margin-right: 10px;
+    
 }
 
 .announced img {
