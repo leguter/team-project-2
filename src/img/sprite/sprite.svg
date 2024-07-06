@@ -42,10 +42,11 @@
     <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="burger">
-    <path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="x">
     <path d="M21 7L7 21" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M7 7L21 21" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
 </svg>
+
