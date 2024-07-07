@@ -1,7 +1,12 @@
-/* .faq {
-  margin-left: 32px;
-  margin-right: 32px;
-} */
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1376px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+}
 
 .faq > .faq-container .title {
   max-width: 100%;
