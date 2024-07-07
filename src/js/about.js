@@ -1,9 +1,25 @@
 import Accordion from 'accordion-js';
 
-
 new Accordion('.accordion-container', {
   openOnInit: [0],
 });
+
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// init Swiper:
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+
+});
+
+
 
 // const button1 = document.querySelector('#ac-trigger-0');
 // const button2 = document.querySelector('#ac-trigger-1');
@@ -17,9 +33,7 @@ new Accordion('.accordion-container', {
 // let svgUp = document.querySelectorAll('.icon-up');
 // let svgDown = document.querySelectorAll('.icon-down');
 
-const active = document.querySelectorAll('.ac');
 
-console.log(active);
 
 
 
