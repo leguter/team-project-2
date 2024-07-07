@@ -1,15 +1,13 @@
+
 const menu = document.querySelector('.name-list-menu');
-const mobileMenu2 = document.querySelector('.backdrop2');
+const mobileMenu2 = document.querySelector('.backdrop-for-btn-menu');
 
 menu.addEventListener('click', openModal);
 
 function openModal() {
-  mobileMenu2.classList.toggle('is-open2');
+  mobileMenu2.classList.toggle('.is-open-for-btn-menu')
 }
 
-
-
-// import { bodyScrollLock } from 'body-scroll-lock';
 
 
 (() => {
@@ -29,7 +27,6 @@ const closeMenuBtn = document.querySelector('#menu-modal-close');
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
         : 'enableBodyScroll';
-    // bodyScrollLock[scrollLockMethod](document.body.ontouchmove);
   };
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
@@ -42,6 +39,5 @@ closeMenuBtn4.addEventListener('click', toggleMenu);
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();

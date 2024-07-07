@@ -1,42 +1,65 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Pridi", sans-serif;
-}
 
 .cover-section {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: #333;
-    color: white;
+    background-color: inherit;
+    padding-bottom: 64px;
+    background-size: cover;
+    background-image:
+        url("../img/img-cover/cover-bg1x.png");
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+   
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.container {
-    padding: 20px;
-    text-align: center;
+
+.cover-container { 
+    padding-top: 169px;
+    padding-bottom: 32px;
+    min-width: 375px;
+    padding-left: 30px;
+    padding-right: 16px;
 }
 
 .marquee {
     position: relative;
     overflow: hidden;
+    transform: rotate(20deg);
+    right: 0;
+    left: -20px;
+    bottom: -25px;
+    display:flex;
+    min-width: 768px;
+    flex-wrap: wrap; 
+    row-gap: 80px;         
 }
 
 .marquee-inner {
     display: flex;
     animation: marqueeScroll 20s linear infinite;
+    gap: 40px;          
 }
 
-.marquee-line {
-    flex-shrink: 0;
-    margin-right: 10px;
-}
 
 .announced img {
     width: 100%;
     height: auto;
-    display: block;
-    border-radius: 10px;
+    display: flex;
+    
 }
 
 @keyframes marqueeScroll {
@@ -47,4 +70,40 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+@media only screen and (min-width: 768px) {
+      
+    
+ .cover-section {
+    padding-bottom: 96px;
+    }
+
+ .cover-container {
+    min-width: 768px;
+  }
+
+  .marquee {
+    right: 0;
+    left: -20px;
+    bottom: -25px;
+    min-width: 768px;      
+    row-gap: 80px;
+    }
+   .marquee-inner {
+     
+       gap: 70px;
+   }
+
+   
+}
+@media only screen and (min-width: 1440px) { 
+ 
+ .cover-section {
+    padding-bottom: 164px;
+ }
+
+ .cover-container {
+     min-width: 1440px;
+ }
+
 }
