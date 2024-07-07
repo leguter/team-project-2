@@ -1,22 +1,18 @@
-import Accordion from 'accordion-js';
+import Accord from 'accordion-js';
 
-new Accordion('.accord-container', {
+new Accord('.accord-container', {
   openOnInit: [0],
 });
 
-// core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
+// import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-
+new Swiper('.slider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 
