@@ -11,8 +11,8 @@ async function  getIpi() {
     console.log(err);
     }
 }
-const dataImg = await  getIpi()
-if (dataImg.length === 0) {
+getIpi().then(dataImg => {
+         if (dataImg.length === 0) {
     iziToast.error({
          message:'Not found',
      })
@@ -21,12 +21,14 @@ if (dataImg.length === 0) {
     createElements(dataImg)
 // createElements(dataImg)
 }
+     })
+
 function createElements(values) {
     const markup = values
         .map(value => {
             return `<li class="reviews-list">
                 <img class="reviews-img" 
-                    src="./${value.avatar_url}" alt="Natalia" width="48" height="48">
+                    src="${value.avatar_url}" alt="Natalia" width="48" height="48">
                 <h3 class="reviews-list-title">
                     ${value.author}
                 </h3>
