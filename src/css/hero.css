@@ -13,14 +13,14 @@
 .hero, header {
     background-size: cover;
         background-image:
-            url("../img/img-hero/hero-phone.png");
+            url("../img/img-hero/phone-hero.png");
         background-repeat: no-repeat;
         background-position: center;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
     .hero, header {
-        background-image: url("../img/img-hero/hero-phone@2x.png");
+        background-image: url("../img/img-hero/phone-hero@2x.png");
     }
 }
 
@@ -113,13 +113,13 @@
     .hero,
     header {
         background-image:
-            url("../img/img-hero/hero-desktop.png");
+            url("../img/img-hero/desktop-hero.png");
     }
        
     @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
     .hero,
     header {
-        background-image: url("../img/img-hero/hero-desktop@2x.png");
+        background-image: url("../img/img-hero/desktop-hero@2x.png");
     }
 }
 }
