@@ -43,20 +43,24 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #fafafa99;
-  text-align: center;
+  color: #fafafa60;
+  text-align: left;
+  max-width: 332px;
 }
 @media screen and (min-width: 768px) {
-  /* .benefits-title {
+  .benefits-title {
     font-size: 108px;
     max-width: 538px;
     max-height: 372px;
     margin-bottom: 0px;
-  } */
+    margin-left: 32px;
+    margin-right: 32px;
+  }
   .benefits-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+    grid-gap: 16px;
+    margin-bottom: 64px;
   }
 
   .benefits-subtitle {
@@ -65,8 +69,24 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .benefits {
+  .benefits-container {
     padding-top: 0;
     margin-left: 50%;
   }
+}
+
+.order-the-project {
+  display: block;
+  border-radius: 60px;
+  width: 163px;
+  height: 55px;
+  border: 1px solid #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-link {
+  font: 500 16px 'Inter Tight', sans-serif;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }

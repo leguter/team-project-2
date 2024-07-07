@@ -1,0 +1,124 @@
+/* .faq {
+  margin-left: 32px;
+  margin-right: 32px;
+} */
+
+.faq > .faq-container .title {
+  max-width: 100%;
+  @media only screen and (min-width: 768px) {
+    max-width: 592px;
+  }
+}
+.accordion-container {
+  @media only screen and (min-width: 1280px) {
+    max-width: 592px;
+  }
+}
+.faq > .faq-container .ac {
+  background: #1c1d20;
+  margin-top: 0;
+  border-bottom: 1px solid #fafafa20;
+  border-top: 1px solid #fafafa20;
+  border-left: none;
+  border-right: none;
+}
+.faq > .faq-container .ac.is-active {
+  background: #1c1d20;
+  border-bottom: none;
+}
+.more-content {
+  position: relative;
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid #fafafa20;
+  border-radius: 60px;
+}
+
+.first-line {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  height: 2px;
+  width: 10px;
+  background-color: #fafafa;
+  transform: rotate(-45deg);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.second-line {
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  height: 2px;
+  width: 10px;
+  background-color: #fafafa;
+  transform: rotate(45deg);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.ac.ac.is-active .first-line {
+  top: 15px;
+  transform: rotate(45deg);
+}
+.ac.ac.is-active .second-line {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+.faq > .faq-container .ac .ac-trigger {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+
+  padding: 28px 24px 28px 24px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.faq-questions {
+  max-width: 224px;
+  @media only screen and (min-width: 768px) {
+    max-width: 600px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    max-width: 488px;
+  }
+}
+.faq > .faq-container .ac.is-active > .ac-header .ac-trigger::after,
+.faq > .faq-container .ac .ac-trigger::after {
+  content: '';
+}
+
+.faq > .faq-container .ac .ac-panel .ac-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #fafafa60;
+
+  padding: 0px 24px 28px 24px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .faq .title {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq .faq-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .faq .title {
+    margin-bottom: 648px;
+  }
+}
