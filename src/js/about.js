@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 
-new Accordion('.accordion-container', {
+new Accordion('.accord-container', {
   openOnInit: [0],
 });
 
