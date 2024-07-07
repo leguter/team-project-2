@@ -5,7 +5,6 @@ header {
 }
 
 .header-container {
-    width: 375px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
