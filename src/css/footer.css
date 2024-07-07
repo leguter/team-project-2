@@ -1,3 +1,9 @@
+.footer-container{
+    margin-bottom: 32px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer-title{
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +29,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+    position: relative;
 }
 .footer-input{
     box-sizing: border-box;
@@ -41,11 +48,43 @@
     text-overflow: ellipsis;
     transition: border-bottom 250ms ease, color 250ms ease;
 }
-.footer-input:hover,
-.footer-input:focus{
+.footer-input:hover
+,
+.footer-input:focus
+{
     color: #FAFAFA;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
 }
+.email-succes{
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #3cbc81;
+    top: 20%;
+}
+.email-invalid{
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #e74a3b;
+    top: 20%;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .footer-commets{
     margin-bottom: 32px;
     margin-top: 16px;
@@ -87,9 +126,13 @@
 }
 .footer-contacts-container{
     display: flex;
-    margin-bottom: 32px;
 }
-
+.input-succes-js{
+    border-bottom: 1px solid  #3cbc81;
+}
+.input-invalid-js{
+    border-bottom: 1px solid #e74a3b;
+}
 
 @media only screen and (min-width:768px){
     .footer-img{
@@ -130,12 +173,19 @@
      .footer-email{
         margin-right: 8px;
      }
-     .footer-contacts-container{
+     .footer-container{
         margin-bottom: 169px;
+        max-width: 768px;
+    }
+    .email-succes{
+        top: 67%;
+    }
+    .email-invalid{
+        top: 67%;
     }
 }
 
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:1440px){
 
     .footer-title{
         margin-bottom: 64px;
@@ -146,5 +196,8 @@
      }
      .footer-commets{
         margin-right: 86px;
+     }
+     .footer-container{
+        max-width: 1440px;
      }
 }
