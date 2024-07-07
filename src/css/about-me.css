@@ -123,12 +123,24 @@
 
 .is-active .ac-panel {
   visibility: visible;
-
 }
-
-.is-open {
+.icon-up {
   display: none;
 }
+
+.icon-down {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+}
+
+
 
 
 @media only screen and (max-width: 767px) {
