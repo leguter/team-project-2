@@ -17,7 +17,8 @@ if (dataImg.length === 0) {
          message:'Not found',
      })
 } else {
-    createElements(getIpi)
+    console.log(dataImg)
+    createElements(dataImg)
 // createElements(dataImg)
 }
 function createElements(values) {
