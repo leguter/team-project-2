@@ -62,10 +62,7 @@ const swiper = new Swiper('.swiper-reviews', {
   navigation: {
     nextEl: '.swiper-btn-last',
     prevEl: '.swiper-btn-next',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    },
+    breakpointsBase: 'window',
+  
 });
