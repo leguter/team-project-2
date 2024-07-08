@@ -54,8 +54,8 @@ function createElements(values) {
 const swiper = new Swiper('.swiper-reviews', {
     modules: [Navigation],
   // Optional parameters
-//   direction: 'horizontal',
-//   loop: false,
+//   direction: 'vertical',
+//   loop: true,
 
   // If we need pagination
   // Navigation arrows
@@ -66,3 +66,5 @@ const swiper = new Swiper('.swiper-reviews', {
     // breakpointsBase: 'container',
   
 });
+const swiperEl = document.querySelector('.swiper-reviews').swiper;
+swiperEl.slideNext()

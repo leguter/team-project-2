@@ -28,6 +28,7 @@ border: 1px solid rgba(250, 250, 250, 0.2);
     width: 332px;
     height: 302px;
     text-align: left;
+    max-width: 343px;
 }
 
 .reviews-list-title {
