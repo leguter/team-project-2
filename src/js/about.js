@@ -11,7 +11,7 @@ new Swiper('.swiper-container', {
     nextEl: '.button-next',
   },
   loop: true,
-  spaseBetween: 1,
+  spaseBetween: 0,
 });
 
 
