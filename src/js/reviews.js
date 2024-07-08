@@ -2,6 +2,8 @@ import axios from "axios";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 // import Swiper styles
 import 'swiper/css';
 const listImg = document.querySelector('.feedback-list')
@@ -29,7 +31,8 @@ getIpi().then(dataImg => {
 function createElements(values) {
     const markup = values
         .map(value => {
-            return `<li class="reviews-list"><div class="swiper-reviews">
+            return `<li class="reviews-list">
+            <div class="swiper-reviews">
             <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img class="reviews-img" 
@@ -42,27 +45,24 @@ function createElements(values) {
                 </p>
                 </div>
                 </div>
-                </div>
+        </div>
                 </li>`;
         })
         .join('');
     listImg.insertAdjacentHTML('beforeend', markup);
 }
 const swiper = new Swiper('.swiper-reviews', {
+    modules: [Navigation],
   // Optional parameters
-  direction: 'vertical',
-  loop: true,
+//   direction: 'horizontal',
+//   loop: false,
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-btn-last',
     prevEl: '.swiper-btn-next',
     },
-    breakpointsBase: 'window',
+    // breakpointsBase: 'container',
   
 });

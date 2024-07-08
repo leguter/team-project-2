@@ -67,6 +67,12 @@ font-family: "Inter Tight", sans-serif;
         height: 52px;
         color: #fafafa
 }
+.swiper-btn-next {
+    cursor: pointer;
+}
+.swiper-btn-last {
+    cursor: pointer;
+}
 .rotate-btns {
     padding-top: 32px;
     display:flex;
