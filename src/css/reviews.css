@@ -31,8 +31,7 @@ font-family: "Inter Tight", sans-serif;
 border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     padding: 32px 24px;
-    width: 332px;
-    height: 302px;
+    max-width: 332px;
     text-align: left;
 }
 
@@ -61,8 +60,8 @@ font-family: "Inter Tight", sans-serif;
     max-width: 284px;
 }
 
-.swiper {
-    width: 600px;
+.swiper-reviews {
+    max-width: 1376px;
     height: 300px;
 }
 .icon-right-swipper {
