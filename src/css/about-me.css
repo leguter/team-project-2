@@ -85,6 +85,7 @@
   height: 40px;
   cursor: pointer;
   background-color: transparent;
+  transition: color 0.25s ease;
   position: relative;
   float: right;
   display: flex;
@@ -103,7 +104,7 @@
   top: 50%;
 }
 
-.accord-first {
+.accord-first, .accord-second, .accord-third{
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
@@ -126,18 +127,15 @@
   visibility: visible;
 }
 
-/* .icon-up {
-  display: none;
-} */
-
 .icon-down {
   display: none;
 }
-
-.active {
+.ac.ac.is-active .icon-down {
   display: block;
 }
-
+.ac.ac.is-active .icon-up {
+  display: none;
+}
 
 .section_slider {
   width: 1312px;
@@ -259,17 +257,10 @@
     width: 1376px;
   }
 
-  .accord-first {
+  .accord-first, .accord-second, .accord-third{
     width: 612px;
     position: relative;
     left: 696px;
   }
-
-  .accord-second, .accord-third {
-    position: relative;
-    left: 696px;
-  }
-
-
 }
 
