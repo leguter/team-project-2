@@ -5,7 +5,7 @@ const mobileMenu2 = document.querySelector('.backdrop-for-btn-menu');
 menu.addEventListener('click', openModal);
 
 function openModal() {
-  mobileMenu2.classList.toggle('.is-open-for-btn-menu')
+  mobileMenu2.classList.toggle('is-open-for-btn-menu')
 }
 
 

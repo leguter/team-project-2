@@ -38,10 +38,10 @@
 .marquee {
     position: relative;
     overflow: hidden;
-    transform: rotate(20deg);
-    right: 0;
-    left: -20px;
-    bottom: -25px;
+    transform: rotate(15deg);
+    right: 156px;
+    left: -100px;
+    bottom: -74px;
     display:flex;
     min-width: 768px;
     flex-wrap: wrap; 
@@ -50,11 +50,15 @@
 
 .marquee-inner {
     display: flex;
-    animation: marqueeScroll 20s linear infinite;
+    animation: marqueeScroll 6000ms linear infinite;
+     
     gap: 40px;          
 }
 
-
+.marquee-liner {
+width: 283px;
+height: 163px;
+}
 .announced img {
     width: 100%;
     height: auto;
@@ -64,7 +68,7 @@
 
 @keyframes marqueeScroll {
     from {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 
     to {
@@ -93,8 +97,10 @@
      
        gap: 70px;
    }
-
-   
+ .marquee-liner {
+    max-width: 544px;
+    height: 314px;
+ }
 }
 @media only screen and (min-width: 1440px) { 
  
