@@ -3,8 +3,9 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 // import Swiper styles
+// import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'
 import 'swiper/css';
 const listImg = document.querySelector('.feedback-list')
 async function  getIpi() {
@@ -25,14 +26,14 @@ getIpi().then(dataImg => {
     console.log(dataImg)
              createElements(dataImg)
              const swipper = new Swiper('.swiper-reviews', {
-                 slidesPerView: 5,
-     modules: [Navigation],
+      modules: [Navigation],
   navigation: {
     nextEl: '.swiper-btn-last',
     prevEl: '.swiper-btn-next',
     },
                  loop: true,
-    direction: 'horizontal',
+                 direction: 'horizontal',
+    slidesPerView: 1,
    
 //   spaseBetween: 1,
     
