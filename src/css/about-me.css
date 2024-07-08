@@ -104,13 +104,16 @@
   top: 50%;
 }
 
-.accord-first, .accord-second, .accord-third{
+.accord-first,
+.accord-second,
+.accord-third {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
 
-.accord-first, .accord-text {
+.accord-first,
+.accord-text {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -130,9 +133,11 @@
 .icon-down {
   display: none;
 }
+
 .ac.ac.is-active .icon-down {
   display: block;
 }
+
 .ac.ac.is-active .icon-up {
   display: none;
 }
@@ -143,36 +148,48 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .section_slider .slider {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .section_slider .slider-wrapper {
   width: 1200px;
   height: 200px;
   overflow: hidden;
-
+  text-align: center;
+  vertical-align: middle;
 }
-.section_slider .slider-wrapper-slide {
- font-family: "Inter Tight", sans-serif;
+
+.section_slider .slider-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.02em;
   color: #fafafa;
-
-  border-radius: 100%;
-  border: 1px;
-  border-color: rgba(250, 250, 250, 0.2);
 }
 
-
+.button-next {
+  width: 112px;
+  text-align: right;
+}
 
 
 
 
 @media only screen and (max-width: 767px) {
+
   .section_text,
   .section_foto {
     min-width: 343px;
@@ -194,12 +211,15 @@
     gap: 32px;
     padding-bottom: 20px;
   }
-  .accord-second, .accord-third {
+
+  .accord-second,
+  .accord-third {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 20px;
   }
+
   .accord-btn {
     width: 36px;
     height: 36px;
@@ -229,7 +249,9 @@
     width: 704px;
   }
 
-  .accord-first, .accord-second, .accord-third {
+  .accord-first,
+  .accord-second,
+  .accord-third {
     gap: 16px;
   }
 
@@ -239,7 +261,9 @@
     gap: 32px;
     padding-bottom: 32px;
   }
-  .accord-second, .accord-third {
+
+  .accord-second,
+  .accord-third {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -260,11 +284,11 @@
     width: 1376px;
   }
 
-  .accord-first, .accord-second, .accord-third{
+  .accord-first,
+  .accord-second,
+  .accord-third {
     width: 612px;
     position: relative;
     left: 696px;
   }
 }
-
-
