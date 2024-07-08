@@ -3,8 +3,9 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 // import Swiper styles
+// import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'
 import 'swiper/css';
 const listImg = document.querySelector('.feedback-list')
 async function  getIpi() {
@@ -22,8 +23,30 @@ getIpi().then(dataImg => {
          message:'Not found',
      })
 } else {
-    console.log(dataImg)
-    createElements(dataImg)
+             createElements(dataImg)
+             const swipper = new Swiper('.swiper-reviews', {
+            
+      modules: [Navigation],
+  navigation: {
+    nextEl: '.swiper-btn-last',
+    prevEl: '.swiper-btn-next',
+    },
+                 loop: true,
+                 direction: 'horizontal',
+                 slidesPerView: 1,
+                 spaceBetween: 16,
+     breakpoints: {
+    344: {
+      slidesPerView: 2,
+    },
+    705: {
+        slidesPerView: 4,
+        
+      
+    }
+  }
+});
+            
 // createElements(dataImg)
 }
      })
@@ -31,10 +54,8 @@ getIpi().then(dataImg => {
 function createElements(values) {
     const markup = values
         .map(value => {
-            return `<li class="reviews-list">
-            <div class="swiper-reviews">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            return `<li class="reviews-list swiper-slide">
+            
                 <img class="reviews-img" 
                     src="${value.avatar_url}" alt="Natalia" width="48" height="48">
                 <h3 class="reviews-list-title">
@@ -43,28 +64,9 @@ function createElements(values) {
                 <p class="reviews-list-text">
                     ${value.review}
                 </p>
-                </div>
-                </div>
-        </div>
                 </li>`;
         })
         .join('');
-    listImg.insertAdjacentHTML('beforeend', markup);
+     listImg.insertAdjacentHTML('beforeend', markup)
 }
-const swiper = new Swiper('.swiper-reviews', {
-    modules: [Navigation],
-  // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
 
-  // If we need pagination
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-btn-last',
-    prevEl: '.swiper-btn-next',
-    },
-    // breakpointsBase: 'container',
-  
-});
-const swiperEl = document.querySelector('.swiper-reviews').swiper;
-swiperEl.slideNext()

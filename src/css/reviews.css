@@ -1,3 +1,9 @@
+ .reviews {
+    max-width: 1376px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+} 
 .reviews-title {
 font-family: "Inter Tight", sans-serif;
     font-weight: 600;
@@ -12,23 +18,21 @@ font-family: "Inter Tight", sans-serif;
 
 }
 
-.feedback-list {
+/* .feedback-list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     
 
 
-}
+} */
 
 .reviews-list {
 border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     padding: 32px 24px;
-    width: 332px;
-    height: 302px;
+    max-width: 332px;
     text-align: left;
-    max-width: 343px;
 }
 
 .reviews-list-title {
@@ -53,10 +57,11 @@ font-family: "Inter Tight", sans-serif;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
     text-align: left;
+    max-width: 284px;
 }
 
-.swiper {
-    width: 600px;
+.swiper-reviews {
+    max-width: 1376px;
     height: 300px;
 }
 .icon-right-swipper {
@@ -89,14 +94,15 @@ font-family: "Inter Tight", sans-serif;
         margin-bottom: 40px;
     }
 
-    .feedback-list {
+    /* .feedback-list {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 16px;
     justify-content: flex-start;
+    max-width: 344px;
 
-    }
+    } */
 
     .reviews-list {
         flex-direction: column;
@@ -124,13 +130,13 @@ font-family: "Inter Tight", sans-serif;
 }
 
 @media only screen and (min-width: 1440px) {
-    .feedback-list {
+    /* .feedback-list {
         flex-direction: row;
         gap: 20px;
-    }
+    } */
 
     .reviews-list {
-        max-width: 370px;
+    width: 332px;
     }
 
     .anastasia {
