@@ -10,15 +10,17 @@
     background-repeat: no-repeat;
     background-position: center;   
 }
-
+.marquee-line{
+    width: 282px;
+    height: 162px;
+}
 
 .cover-section {
     position: relative;
     /* width: 100%; */
     overflow: hidden;
     background-color: inherit;
-    /* padding-bottom: 64px; */
-    min-height: 508px;
+    height: 508px;
     background-size: cover;
     background-image:
         url("../img/img-cover/cover-bg1x.png");
@@ -42,6 +44,7 @@
 
 .cover-container { 
     max-width: 375px;
+    width: 100%;
     
 }
 
@@ -49,19 +52,21 @@
 .marquee {
     position: absolute;
     transform: rotate(20deg);
-    right: 0;
-    left: -20px;
-    bottom: -25px;
+    /* right: 30px; */
+    left: -80px;
+    bottom: -20px;
+    top: -20px;
     display:flex;
     max-width: 768px;
     flex-wrap: wrap; 
-    row-gap: 80px;    
+    row-gap: 20px;    
 }
 
 .marquee-inner {
     display: flex;
     animation: marqueeScroll 20s linear infinite;
-    gap: 40px;  
+    gap: 7px;  
+    width: 100%;
     /* animation-play-state: running;    */
     animation-delay: -10s;  
     width: fit-content;   
@@ -71,12 +76,12 @@
     animation: marqueeScrollDuplicated 20s linear infinite;
 }
 .annouced{
-    width: 282px;
-    height: 162px;
+    max-width: none;
+    height: auto;
 }
 .annouced img {
-    /* width: 100%; */
-    /* height: auto; */
+    width: 100%;
+    height: auto;
     /* display: flex; */
     
 }
@@ -85,15 +90,6 @@
 .marquee-inner:nth-child(2) {
     animation-delay: -15s; 
 }
-
-/* @keyframes marqueeScroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 
 
 @keyframes marqueeScroll {
@@ -111,7 +107,7 @@
         transform: translate(0%);
     }
     to {
-        transform: translate(calc(-50% - 15px ));
+        transform: translate(calc(-50% - 3px ));
     }
 }
 @media only screen and (min-width: 768px) {
@@ -125,18 +121,27 @@
     min-width: 768px;
   }
 
-  .marquee {
-    right: 0;
-    left: -20px;
-    bottom: -25px;
-    min-width: 768px;      
+  .marquee {    
     row-gap: 80px;
+    left: -20px;
+    top: -100px;
     }
-   .marquee-inner {
-     
-       gap: 70px;
-   }
 
+.marquee-inner {
+    gap: 40px;  
+}
+.marquee-line{
+    width: 544px;
+    height: 314px;
+}
+@keyframes marqueeScrollDuplicated {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(calc(-50% - 20px ));
+    }
+}
    
 }
 @media only screen and (min-width: 1440px) { 
@@ -148,5 +153,22 @@
  .cover-container {
      min-width: 1440px;
  }
+ .marquee {
+    left: -150px;
+    top: -400px; 
+}
+
+.marquee-line{
+    width: 544px;
+    height: 314px;
+}
+ @keyframes marqueeScrollDuplicated {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(calc(-50% - 20px ));
+    }
+}
 
 }
