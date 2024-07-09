@@ -6,9 +6,9 @@
 
 .cover-section {
     position: relative;
-    /* width: 100%; */
-    max-width: 375px;
-    padding: 0 16px 64px 16px;
+
+    width: 100%;
+    margin-bottom: 64px;
     overflow: hidden;
     background-color: inherit;
     height: 508px;
@@ -110,9 +110,10 @@
       
     
  .cover-section {
-    max-width: 768px;
+
+    margin-bottom: 96px;
     height: 960px;
-    padding: 0 32px 96px 32px;
+
     }
 
  .cover-container {
@@ -127,7 +128,7 @@
     }
 
 .marquee-inner {
-    gap: 40px;  
+    gap: 40px;
 }
 .marquee-line{
     width: 544px;
@@ -148,8 +149,9 @@
 @media only screen and (min-width: 1440px) { 
  
  .cover-section {
-    max-width: 1440px;
-    padding-bottom: 164px;
+
+    margin-bottom: 164px;
+
  }
 
  .cover-container {
