@@ -10,7 +10,21 @@
     background-repeat: no-repeat;
     background-position: center;   
 }
-   
+
+
+.cover-section {
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+    background-color: inherit;
+    /* padding-bottom: 64px; */
+    min-height: 508px;
+    background-size: cover;
+    background-image:
+        url("../img/img-cover/cover-bg1x.png");
+    background-repeat: no-repeat;
+    background-position: center;   
+}
 
 .visually-hidden {
     position: absolute;
@@ -31,64 +45,61 @@
     
 }
 
+
 .marquee {
-    position: relative;
-    overflow: hidden;
-    transform: rotate(15deg);
-    /* right: 156px;
-    left: -100px;
-    bottom: -74px; */
+    position: absolute;
+    transform: rotate(20deg);
+    right: 0;
+    left: -20px;
+    bottom: -25px;
     display:flex;
-    /* min-width: 768px; */
+    max-width: 768px;
     flex-wrap: wrap; 
-            
+    row-gap: 80px;    
 }
 
 .marquee-inner {
     display: flex;
-    animation: marqueeScroll 6000ms linear infinite;
-    gap: 40px;   
-    
+    animation: marqueeScroll 20s linear infinite;
+    gap: 40px;  
     /* animation-play-state: running;    */
-        animation-delay: -10s;
-        width: fit-content;
-}
-
-.marquee-inner:nth-child(2) {
-    animation-delay: -15s;
+    animation-delay: -10s;  
+    width: fit-content;   
 }
 
 .marquee-inner.duplicated {
     animation: marqueeScrollDuplicated 20s linear infinite;
 }
-
-.marquee-line {
- max-width: 283px;
- max-width: 163px;
+.annouced{
+    width: 282px;
+    height: 162px;
+}
+.annouced img {
+    /* width: 100%; */
+    /* height: auto; */
+    /* display: flex; */
+    
 }
 
 
-/* .announced img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    
-} */
+.marquee-inner:nth-child(2) {
+    animation-delay: -15s; 
+}
 
 /* @keyframes marqueeScroll {
-    from {
-        transform: translateX(0%);
+    0% {
+        transform: translateX(100%);
     }
-
-    to {
+    100% {
         transform: translateX(-100%);
     }
 } */
+
+
 @keyframes marqueeScroll {
     0% {
         transform: translateX(0%);
     }
-
     100% {
         transform: translateX(-100%);
     }
@@ -99,24 +110,19 @@
     from {
         transform: translate(0%);
     }
-
     to {
-        transform: translate(calc(-50% - 15px));
+        transform: translate(calc(-50% - 15px ));
     }
 }
-
-/* Стилі 768 */
-
-
-
 @media only screen and (min-width: 768px) {
       
     
-
+ .cover-section {
+    padding-bottom: 96px;
+    }
 
  .cover-container {
-    max-width: 768px;
-    
+    min-width: 768px;
   }
 
   .marquee {
@@ -126,29 +132,21 @@
     min-width: 768px;      
     row-gap: 80px;
     }
-
    .marquee-inner {
      
        gap: 70px;
    }
 
- .marquee-liner {
-    max-width: 544px;
-    height: 314px;
- }
-
+   
 }
-
-
-/* Стилі 1440 */
-
-
 @media only screen and (min-width: 1440px) { 
  
- 
+ .cover-section {
+    padding-bottom: 164px;
+ }
 
  .cover-container {
-     max-width: 1440px;
+     min-width: 1440px;
  }
 
 }

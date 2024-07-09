@@ -2,7 +2,6 @@ const scroller = document.querySelector(".marquee");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     addAnimation();
-    console.log("HEREFDSFSDF");
 }
 function addAnimation(){
     scroller.setAttribute('data-animated', true);
@@ -15,7 +14,6 @@ function addAnimation(){
             duplItem.setAttribute('aria-hidden', true);
             scroller.classList.add('duplicated');
             scroller.appendChild(duplItem);
-            console.log(duplItem);
         });
     });
 }
