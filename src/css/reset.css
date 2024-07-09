@@ -36,6 +36,9 @@ img {
 body {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
 }
 .container {
  padding-bottom: 64px;
@@ -43,13 +46,20 @@ body {
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 375px;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
   .container {
     padding-bottom: 96px;
     padding-left: 32px;
       padding-right: 32px;
-
+  max-width: 768px;
     
+  }
+}
+@media screen and (min-width: 1440px) { 
+  .container {
+    max-width: 1440px;
+    padding-bottom: 164px;
   }
 }

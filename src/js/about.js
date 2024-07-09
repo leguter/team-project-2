@@ -1,17 +1,28 @@
 import Accord from 'accordion-js';
-
+import { Navigation } from 'swiper/modules';
 new Accord('.accord-container', {
   openOnInit: [0],
 });
 
 import Swiper from '../../node_modules/swiper/swiper-bundle.min.mjs';
-
-new Swiper('.swiper-container', {
+import 'swiper/css';
+new Swiper('.swiper-about', {
+  // modules: [Navigation],
   navigation: {
-    nextEl: '.button-next',
+    nextEl: '.swiper-button-next',
   },
   loop: true,
-  spaseBetween: 0,
+  slidesPerView: 2,
+  breakpoints: {
+    344: {
+      slidesPerView: 3,
+    },
+    705: {
+        slidesPerView: 6,
+        
+      
+    }
+  }
 });
 
 
