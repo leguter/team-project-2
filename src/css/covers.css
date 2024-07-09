@@ -1,15 +1,4 @@
 
-.cover-section {
-    position: relative;
-    /* width: 100%; */
-    overflow: hidden;
-    background-color: inherit;
-    background-size: cover;
-    background-image:
-        url("../img/img-cover/cover-bg1x.png");
-    background-repeat: no-repeat;
-    background-position: center;   
-}
 .marquee-line{
     width: 282px;
     height: 162px;
