@@ -34,6 +34,7 @@ getIpi().then(dataImg => {
                  loop: true,
                  direction: 'horizontal',
                  slidesPerView: 1,
+                 spaseBetween: 16,
      breakpoints: {
     // when window width is >= 320px
     // 320: {
@@ -42,11 +43,12 @@ getIpi().then(dataImg => {
     // when window width is >= 480px
     344: {
       slidesPerView: 2,
-      
+      spaseBetween: 16,
     },
     // when window width is >= 640px
     705: {
-      slidesPerView: 4,
+        slidesPerView: 4,
+        spaseBetween: 16,
       
     }
   }
