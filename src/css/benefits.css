@@ -21,11 +21,12 @@
   text-transform: uppercase;
   margin-bottom: 32px;
   white-space: nowrap;
+  margin-left: 32px;
 }
 
-.title-benefits-container {
-  width: 680px;
-}
+/* .title-benefits-container {
+  max-width: 704px;
+} */
 
 .benefits-list {
   display: flex;
@@ -91,11 +92,11 @@
 @media screen and (min-width: 768px) {
   .benefits-title {
     font-size: 108px;
-    max-width: 538px;
+    max-width: 704px;
     max-height: 372px;
     margin-bottom: 0px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .benefits-list {
     display: grid;
@@ -125,6 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 32px;
 }
 .footer-link {
   font: 500 16px 'Inter Tight', sans-serif;
