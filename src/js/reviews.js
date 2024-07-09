@@ -23,7 +23,22 @@ getIpi().then(dataImg => {
      })
 } else {
     console.log(dataImg)
-    createElements(dataImg)
+             createElements(dataImg)
+             const swipper = new Swiper('.swiper-reviews', {
+                 slidesPerView: 5,
+     modules: [Navigation],
+  navigation: {
+    nextEl: '.swiper-btn-last',
+    prevEl: '.swiper-btn-next',
+    },
+                 loop: true,
+    direction: 'horizontal',
+   
+//   spaseBetween: 1,
+    
+  
+});
+            
 // createElements(dataImg)
 }
      })
@@ -31,10 +46,8 @@ getIpi().then(dataImg => {
 function createElements(values) {
     const markup = values
         .map(value => {
-            return `<li class="reviews-list">
-            <div class="swiper-reviews">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            return `<li class="reviews-list swiper-slide">
+            
                 <img class="reviews-img" 
                     src="${value.avatar_url}" alt="Natalia" width="48" height="48">
                 <h3 class="reviews-list-title">
@@ -43,28 +56,9 @@ function createElements(values) {
                 <p class="reviews-list-text">
                     ${value.review}
                 </p>
-                </div>
-                </div>
-        </div>
                 </li>`;
         })
         .join('');
-    listImg.insertAdjacentHTML('beforeend', markup);
+     listImg.insertAdjacentHTML('beforeend', markup)
 }
-const swiper = new Swiper('.swiper-reviews', {
-    modules: [Navigation],
-  // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
 
-  // If we need pagination
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-btn-last',
-    prevEl: '.swiper-btn-next',
-    },
-    // breakpointsBase: 'container',
-  
-});
-const swiperEl = document.querySelector('.swiper-reviews').swiper;
-swiperEl.slideNext()
