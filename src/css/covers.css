@@ -6,6 +6,7 @@
 
 .cover-section {
     position: relative;
+
     width: 100%;
     margin-bottom: 64px;
     overflow: hidden;
@@ -47,7 +48,8 @@
     bottom: -20px;
     top: -20px;
     display:flex;
-    max-width: 768px;
+    max-width: 375px;
+    height: 508px;
     flex-wrap: wrap; 
     row-gap: 20px;    
 }
@@ -65,10 +67,10 @@
 .marquee-inner.duplicated {
     animation: marqueeScrollDuplicated 20s linear infinite;
 }
-.annouced{
+/* .annouced{
     max-width: none;
     height: auto;
-}
+} */
 .annouced img {
     width: 100%;
     height: auto;
@@ -100,19 +102,26 @@
         transform: translate(calc(-50% - 3px ));
     }
 }
+
+
+
+
 @media only screen and (min-width: 768px) {
       
     
  .cover-section {
+
     margin-bottom: 96px;
     height: 960px;
+
     }
 
  .cover-container {
-    min-width: 768px;
+    max-width: 768px;
   }
 
-  .marquee {    
+  .marquee {   
+    max-width: 768px;
     row-gap: 80px;
     left: -20px;
     top: -100px;
@@ -135,14 +144,18 @@
 }
    
 }
+
+
 @media only screen and (min-width: 1440px) { 
  
  .cover-section {
+
     margin-bottom: 164px;
+
  }
 
  .cover-container {
-     min-width: 1440px;
+     max-width: 1440px;
  }
  .marquee {
     left: -150px;
