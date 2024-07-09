@@ -112,9 +112,10 @@ font-family: "Inter Tight", sans-serif;
 
     } */
 
-    .reviews-list {
+        .feedback-list .reviews-list {
+            display: flex;
         flex-direction: column;
-        width: 344px;
+        max-width: 344px;
         gap: 8px;
 
     }
