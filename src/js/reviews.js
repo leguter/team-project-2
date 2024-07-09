@@ -24,14 +24,16 @@ getIpi().then(dataImg => {
      })
 } else {
              createElements(dataImg)
-             const swipper = new Swiper('.swiper-reviews', {
+             const swipper = new Swiper('.swiper', {
             
       modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-btn-last',
-    prevEl: '.swiper-btn-next',
-    },
-                 loop: true,
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
+                 },
+            
+  centerInsufficientSlides: true,
+                 
                  direction: 'horizontal',
                  slidesPerView: 1,
                  spaceBetween: 16,
