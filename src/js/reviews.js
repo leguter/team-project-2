@@ -33,16 +33,20 @@ getIpi().then(dataImg => {
                  },
             
   centerInsufficientSlides: true,
-                 
+                 height: 302,
+                 width: 343,
                  direction: 'horizontal',
                  slidesPerView: 1,
                  spaceBetween: 16,
      breakpoints: {
     344: {
-      slidesPerView: 2,
+             slidesPerView: 2,
+             width: 704,
     },
     705: {
         slidesPerView: 4,
+        width: 1376,
+        height: 302,
         
       
     }
