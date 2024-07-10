@@ -6,7 +6,7 @@ new Accord('.accord-container', {
 
 import Swiper from '../../node_modules/swiper/swiper-bundle.min.mjs';
 import 'swiper/css';
-new Swiper('.swiper', {
+new Swiper('.swiper-about', {
   // modules: [Navigation],
   navigation: {
     nextEl: '.swiper-button-next',
