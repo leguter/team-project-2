@@ -4,6 +4,9 @@
   align-items: flex-start;
   position: absolute;
   margin-top: 32px;
+  /* max-width: 375px; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .backdrop-for-btn-menu {
@@ -189,19 +192,16 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    width: 343px;
+  /* .header {
+   
     position: absolute;
-    margin-left: auto;
-      margin-right: auto;
 
-  }
+  } */
 
   .header-container{
-    width: 343px;
+    min-width: 343px;
     padding-left: 16px;
-    padding-right: 16px;
-  
+    margin-left: auto;
   }
 
 
@@ -218,7 +218,6 @@
   .header-container {
         width: 704px;
         padding-left: 32px;
-        padding-right: 32px;
       
   }
 
