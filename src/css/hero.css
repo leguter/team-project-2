@@ -4,6 +4,7 @@
     max-width: 375px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 16px;
 }
 
 .hero {
@@ -31,6 +32,7 @@
     color: #fafafa;
     width: 100%;
     white-space: pre-line;
+    padding-left: 16px;
 }
 
 .box-for-title {
@@ -44,6 +46,7 @@
     color: #fafafa;
     display: flex;
     gap: 4px;
+    padding-left: 16px;
 }
 
 .item-social-list {
@@ -89,6 +92,7 @@
     }
     .hero-main-title {
         font: 500 90px / 1 "Inter Tight", sans-serif;
+        padding-left: 32px;
     }
     .box-for-title {
         margin-bottom: 187px;
