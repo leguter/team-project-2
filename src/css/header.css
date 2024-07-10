@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   position: absolute;
   margin-top: 32px;
 }
@@ -257,7 +257,7 @@
 
   .backdrop-for-btn-menu {
     display: block;
-    position: fixed;
+    position: relative;
     z-index: 999999;
     width: 100%;
     height: 100%;
@@ -341,6 +341,11 @@
         margin-top: 13px;
     }
 
+    .name-list-menu:hover {
+        cursor: pointer;
+    }
+
+
        .box-link-project {
         cursor: pointer;
         display: block;
@@ -361,10 +366,7 @@
 
     .backdrop-for-btn-menu {
         display: block;
-        position: fixed;
         z-index: 999999;
-        width: 100%;
-        height: 100%;
         opacity: 0;
         visibility: hidden;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -382,8 +384,6 @@
         text-decoration-skip-ink: none;
         color: #fafafa;
         position: fixed;
-        /* top: 80px;
-        left: 325px; */
         text-align: center;
     }
 
