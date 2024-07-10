@@ -7,10 +7,6 @@
   position: absolute;
 }
 
-header {
-  
-}
-
 .backdrop-for-btn-menu {
   display: none;
 }
@@ -217,7 +213,7 @@ header {
   }
 
   .header-container {
-        width: 704px;
+        width: 768px;
         padding-left: 32px;
         padding-right: 32px;
       
@@ -283,7 +279,7 @@ header {
     .nav-modal-btn-menu {
         position: absolute;
         top: 69px;
-        left: 42%;
+        left: 46%;
     }
 }
 
@@ -396,6 +392,8 @@ header {
 }
   .header-container {
     width: 1376px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
         .nav-modal-btn-menu {

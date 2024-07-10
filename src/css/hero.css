@@ -36,6 +36,7 @@
 .box-for-title {
     margin-bottom: 212px;
     height: 250px;
+    margin-left: 16px;
 }
 
 .hero-social-list {
@@ -44,6 +45,7 @@
     color: #fafafa;
     display: flex;
     gap: 4px;
+    margin-left: 16px;
 }
 
 .item-social-list {
@@ -94,9 +96,11 @@
         margin-bottom: 187px;
         width: 632px;
         height: 450px;
+        margin-left: -5px;
     }
     .hero-social-list {
         justify-content: flex-end;
+        margin-right: -70px;
     }
 
 }
@@ -104,9 +108,8 @@
 @media screen and (min-width: 1440px) {
     .container-hero {
         min-width: 1440px;
-           
-            margin-right: auto;
-            margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
  
     .box-for-title {
