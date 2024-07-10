@@ -277,8 +277,13 @@
     letter-spacing: -0.02em;
     text-decoration-skip-ink: none;
     color: #ed3b44;
-
 }
+
+    .nav-modal-btn-menu {
+        position: absolute;
+        top: 69px;
+        left: 42%;
+    }
 }
 
 .mobile-close-btn {
@@ -377,8 +382,8 @@
         text-decoration-skip-ink: none;
         color: #fafafa;
         position: fixed;
-        top: 80px;
-        left: 325px;
+        /* top: 80px;
+        left: 325px; */
         text-align: center;
     }
 
@@ -394,8 +399,9 @@
     width: 1376px;
   }
 
-  .navigation-for-btn-menu {
-    top: 6%;
-    left: 48.5%;
-  }
+        .nav-modal-btn-menu {
+            position: absolute;
+            top: 68px;
+            left: 48%;
+        }
 }
