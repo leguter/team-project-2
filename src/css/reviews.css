@@ -96,11 +96,11 @@ font-family: "Inter Tight", sans-serif;
     .section-reviews {
         max-width: 704px;
     }
-    .reviews-title {
-        font-size: 48px;
+    /* .reviews-title {
+        font-size: px;
         line-height: .91667;
         margin-bottom: 40px;
-    }
+    } */
 
     /* .feedback-list {
         display: flex;
