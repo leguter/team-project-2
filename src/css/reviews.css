@@ -30,18 +30,14 @@ font-family: "Inter Tight", sans-serif;
 
 
 } */
-
-.swiper-slide {
-    height: 344px !important;
-    width: 302px !important;
-}
-
 .reviews-list {
 border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     padding: 32px 24px;
     text-align: left;
     background-color: transparent;
+    height: 344px !important;
+        width: 302px !important;
 }
 
 .reviews-list-title {
@@ -157,4 +153,8 @@ font-family: "Inter Tight", sans-serif;
     .anastasia {
         display: flex;
     }
+        .reviews-list {
+            height: 332px !important;
+                width: 302px !important;
+        }
 }
