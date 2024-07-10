@@ -1,9 +1,9 @@
 .container-hero {
     padding-top: 282px;
     padding-bottom: 32px;
-    min-width: 375px;
-    padding-right: 16px;
-    padding-left: 13px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero {
@@ -81,8 +81,11 @@
     }
 
     .container-hero {
-        min-width: 768px;
+        max-width: 768px;
         padding-left: 32px;
+        padding-right: 104px;
+            margin-right: auto;
+            margin-left: auto;
     }
     .hero-main-title {
         font: 500 90px / 1 "Inter Tight", sans-serif;
@@ -101,6 +104,9 @@
 @media screen and (min-width: 1440px) {
     .container-hero {
         min-width: 1440px;
+           
+            margin-right: auto;
+            margin-left: auto;
     }
  
     .box-for-title {
