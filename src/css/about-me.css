@@ -153,12 +153,12 @@
 .section_slider .slider {
   display: flex;
   justify-content: center;
-  align-items: center; 
- 
-} 
+  align-items: center;
+
+}
 
 .section_slider .slider-wrapper {
-  
+
   height: 200px;
   text-align: center;
   /* vertical-align: middle; */
@@ -188,7 +188,7 @@
 .slider .slider-wrapper .slider-wrapper-link {
   max-width: 200px;
   margin-right:30px;
-  
+
 }
 
 

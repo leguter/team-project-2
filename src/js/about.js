@@ -19,8 +19,8 @@ new Swiper('.swiper-about', {
     },
     705: {
         slidesPerView: 6,
-        
-      
+
+
     }
   }
 });
