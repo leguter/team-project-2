@@ -47,8 +47,6 @@
     color: #fafafa;
     display: flex;
     gap: 4px;
-    margin-left: 16px;
-
 }
 
 .item-social-list {
@@ -104,7 +102,6 @@
     }
     .hero-social-list {
         justify-content: flex-end;
-        margin-right: -70px;
     }
 
 }
@@ -118,7 +115,7 @@
  
     .box-for-title {
         margin-bottom: 243px;
-        width: 1084px;
+        width: 100%;
         height: 270px;
         margin-left: 178px;
     }
@@ -126,6 +123,10 @@
         background-image:
             url("../img/img-hero/desktop-hero.png");
     }
+
+        .hero-main-title {
+            padding-left: 0;
+        }
        
     @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
     .hero {
