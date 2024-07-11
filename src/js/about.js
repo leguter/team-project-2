@@ -4,26 +4,28 @@ new Accord('.accord-container', {
 });
 
 import Swip from '../../node_modules/swiper/swiper-bundle.min.mjs';
-import 'swiper/css';
 new Swip('.slider', {
+  loop: true,
   navigation: {
     nextEl: '.button-next',
     },
     breakpoints: {
       // when window width is >= 320px
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20
+      343: {
+        slidesPerView: 'auto',
+        width: 260,
+
       },
       // when window width is >= 480px
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 30
+      703: {
+        slidesPerView: 'auto',
+        width: 600,
+
       },
       // when window width is >= 640px
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 40
+      1375: {
+        slidesPerView: 'auto',
+        width: 1200,
       }
     }
 })
