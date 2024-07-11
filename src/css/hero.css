@@ -4,6 +4,7 @@
     max-width: 375px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 16px;
 }
 
 .hero {
@@ -31,11 +32,13 @@
     color: #fafafa;
     width: 100%;
     white-space: pre-line;
+    padding-left: 16px;
 }
 
 .box-for-title {
     margin-bottom: 212px;
     height: 250px;
+    margin-left: 16px;
 }
 
 .hero-social-list {
@@ -44,6 +47,8 @@
     color: #fafafa;
     display: flex;
     gap: 4px;
+    margin-left: 16px;
+
 }
 
 .item-social-list {
@@ -89,14 +94,17 @@
     }
     .hero-main-title {
         font: 500 90px / 1 "Inter Tight", sans-serif;
+        padding-left: 32px;
     }
     .box-for-title {
         margin-bottom: 187px;
         width: 632px;
         height: 450px;
+        margin-left: -5px;
     }
     .hero-social-list {
         justify-content: flex-end;
+        margin-right: -70px;
     }
 
 }
@@ -104,9 +112,8 @@
 @media screen and (min-width: 1440px) {
     .container-hero {
         min-width: 1440px;
-           
-            margin-right: auto;
-            margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
  
     .box-for-title {

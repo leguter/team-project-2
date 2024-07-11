@@ -2,8 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: absolute;
+
   margin-top: 32px;
+  min-width: 375px;
+  position: absolute;
+}
+
+header {
+  
+
+  
+  margin-top: 32px;
+  /* max-width: 375px; */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .backdrop-for-btn-menu {
@@ -189,21 +202,20 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .header {
     width: 343px;
-    position: absolute;
     margin-left: auto;
       margin-right: auto;
 
-  }
+
+  } */
 
   .header-container{
     width: 343px;
-    padding-left: 16px;
     padding-right: 16px;
-  
-  }
 
+  }
 
 }
 
@@ -216,9 +228,8 @@
   }
 
   .header-container {
-        width: 704px;
+        width: 768px;
         padding-left: 32px;
-        padding-right: 32px;
       
   }
 
@@ -282,7 +293,7 @@
     .nav-modal-btn-menu {
         position: absolute;
         top: 69px;
-        left: 42%;
+        left: 46%;
     }
 }
 
@@ -397,6 +408,8 @@
 }
   .header-container {
     width: 1376px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
         .nav-modal-btn-menu {
