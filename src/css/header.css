@@ -8,13 +8,13 @@
   width: 343px;
 }
 
-<<<<<<< HEAD
-=======
-header {
-  
-}
 
->>>>>>> main
+.navigation-for-btn-menu {
+  display: none;
+
+
+
+
 .backdrop-for-btn-menu {
   display: none;
 }
@@ -203,9 +203,7 @@ header {
     width: 343px;
     margin-left: auto;
       margin-right: auto;
-
-
-  } */
+  }
 
   .header-container{
     width: 343px;
@@ -226,6 +224,7 @@ header {
   .header-container {
         width: 768px;
         padding-left: 32px;
+        padding-right: 32px;
       
   }
 

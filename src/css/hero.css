@@ -38,7 +38,6 @@
 .box-for-title {
     margin-bottom: 212px;
     height: 250px;
-    margin-left: 16px;
 }
 
 .hero-social-list {
@@ -47,6 +46,7 @@
     color: #fafafa;
     display: flex;
     gap: 4px;
+    margin-left: 16px;
 }
 
 .item-social-list {
@@ -102,6 +102,8 @@
     }
     .hero-social-list {
         justify-content: flex-end;
+        margin-right: 32px;
+
     }
 
 }
