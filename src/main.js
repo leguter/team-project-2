@@ -5,3 +5,4 @@ import './js/reviews';
 import './js/cover';
 import './js/footer';
 import './js/header-modal';
+import './js/scroll-to-top.js';

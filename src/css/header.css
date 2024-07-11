@@ -2,9 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
   margin-top: 32px;
   min-width: 375px;
   position: absolute;
+}
+
+header {
+  
+
+  
+  margin-top: 32px;
+  /* max-width: 375px; */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .backdrop-for-btn-menu {
@@ -190,16 +202,19 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .header {
     width: 343px;
     margin-left: auto;
       margin-right: auto;
 
-  }
+
+  } */
 
   .header-container{
     width: 343px;
     padding-right: 16px;
+
   }
 
 }
@@ -215,7 +230,6 @@
   .header-container {
         width: 768px;
         padding-left: 32px;
-        padding-right: 32px;
       
   }
 
@@ -254,7 +268,7 @@
 
   .backdrop-for-btn-menu {
     display: block;
-    position: fixed;
+    position: relative;
     z-index: 999999;
     width: 100%;
     height: 100%;
@@ -338,6 +352,11 @@
         margin-top: 13px;
     }
 
+    .name-list-menu:hover {
+        cursor: pointer;
+    }
+
+
        .box-link-project {
         cursor: pointer;
         display: block;
@@ -358,10 +377,7 @@
 
     .backdrop-for-btn-menu {
         display: block;
-        position: fixed;
         z-index: 999999;
-        width: 100%;
-        height: 100%;
         opacity: 0;
         visibility: hidden;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
