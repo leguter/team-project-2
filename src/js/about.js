@@ -1,40 +1,31 @@
 import Accord from 'accordion-js';
+import Swiper from 'swiper';
+import 'swiper/css';
+
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
+
 new Accord('.accord-container', {
   openOnInit: [0],
 });
 
-import Swip from '../../node_modules/swiper/swiper-bundle.min.mjs';
-new Swip('.slider', {
-  loop: true,
+new Swiper('.slider', {
+  modules: [Navigation, Keyboard, Mousewheel],
   navigation: {
     nextEl: '.button-next',
+  },
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 2,
+  width: 260,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      width: 600,
     },
-    breakpoints: {
-      // when window width is >= 320px
-      343: {
-        slidesPerView: 'auto',
-        width: 260,
-
-      },
-      // when window width is >= 480px
-      703: {
-        slidesPerView: 'auto',
-        width: 600,
-
-      },
-      // when window width is >= 640px
-      1375: {
-        slidesPerView: 'auto',
-        width: 1200,
-      }
-    }
-})
-
-
-
-
-
-
-
-
-
+    1440: {
+      slidesPerView: 6,
+      width: 1200,
+    },
+  },
+});
