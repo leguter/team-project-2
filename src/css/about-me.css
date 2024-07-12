@@ -65,7 +65,7 @@
 }
 
 .accord-header {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -74,7 +74,6 @@
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 8px;
 }
-
 
 .accord-btn {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -91,7 +90,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .accord-btn::after {
   text-align: center;
@@ -113,7 +111,7 @@
 
 .accord-first,
 .accord-text {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -141,23 +139,7 @@
   display: none;
 }
 
-.section_slider {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.section_slider .button-next {
-  text-align: right;
-}
-
 @media only screen and (max-width: 767px) {
-
   .section_text,
   .section_foto {
     width: 343px;
@@ -203,21 +185,14 @@
   }
   .slider {
     box-sizing: border-box;
-    width: 100%;
     overflow: hidden;
   }
 
   .slider-wrapper {
     box-sizing: border-box;
-    width: 260px;
-    overflow: hidden;
   }
   .slider-wrapper-link {
-    width: 130px;
-  }
-
-  .button-next {
-    width: 83px;
+    max-width: 200px;
   }
 
   .slider-red {
@@ -228,17 +203,15 @@
     height: 130px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-
   .section_text,
   .section_foto {
     width: 704px;
@@ -284,6 +257,7 @@
     width: 704px;
     height: 200px;
   }
+
   .slider {
     box-sizing: border-box;
     width: 100%;
@@ -292,16 +266,6 @@
 
   .slider-wrapper {
     box-sizing: border-box;
-    width: 600px;
-    overflow: hidden;
-  }
-
-  .slider-wrapper-link {
-    width: 200px !important;
-  }
-
-  .button-next {
-    width: 104px;
   }
 
   .slider-red {
@@ -312,7 +276,7 @@
     height: 200px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
@@ -321,7 +285,6 @@
 }
 
 @media screen and (min-width: 1376px) {
-
   .section_text,
   .section_foto {
     width: 680px;
@@ -339,21 +302,107 @@
     position: relative;
     left: 696px;
   }
+}
 
+.section_slider {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-me-btn,
+.button-next {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+.about-me-btn,
+.button-next {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.button-next {
+  width: 28px;
+  height: 28px;
+}
+
+.button-next:hover,
+.button-next:focus,
+.button-next:active {
+  color: var(--Button_text);
+}
+
+@media only screen and (min-width: 768px) {
+  .button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-me-list-skills-item {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-me-wrapper-content {
+    flex-direction: row;
+  }
+  .about-me-wrapper-content > div {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media only screen and (min-width: 375px) {
   .section_slider {
+    gap: 55px;
+  }
+}
+
+.about-me-list-skills-item.swiper-slide {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: white;
+  flex-shrink: 0;
+}
+
+.about-me-list-skills-item.swiper-slide-active {
+  background-color: #ed3b44;
+}
+
+@media only screen and (min-width: 768px) {
+  .section_slider {
+    gap: 64px;
+  }
+
+  .about-me-list-skills-item.swiper-slide {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section_slider {
+    gap: 72px;
     width: 1312px;
   }
-
-  .slider {
-    width: 100%;
-    overflow: hidden;
-  }
-  .slider-wrapper {
-    width: 1200px;
-  }
-
-  .button-next {
-    width: 112px;
-  }
-
 }
