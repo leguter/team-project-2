@@ -31,19 +31,17 @@ getIpi().then(dataImg => {
     nextEl: '.swiper-button-prev',
     prevEl: '.swiper-button-next',
                  },
-            
-  centerInsufficientSlides: true,
-                 height: 302,
-                 width: 343,
+                 height: 320,
+                 width: 320,
                  direction: 'horizontal',
                  slidesPerView: 1,
                  spaceBetween: 16,
      breakpoints: {
-    344: {
+    768: {
              slidesPerView: 2,
              width: 704,
     },
-    705: {
+    1440: {
         slidesPerView: 4,
         width: 1376,
         height: 302,
