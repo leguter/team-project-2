@@ -7,15 +7,6 @@
   position: absolute;
   width: 343px;
 }
-
-
-
-.navigation-for-btn-menu {
-  display: none;
-}
-
-
-
 .backdrop-for-btn-menu {
   display: none;
 }
@@ -276,6 +267,7 @@
   .is-open-for-btn-menu {
     opacity: 1;
     visibility: visible;
+      
   }
 
   .navigation-for-btn-menu {
